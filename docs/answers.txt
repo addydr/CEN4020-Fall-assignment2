@@ -1,0 +1,67 @@
+Gitlab tutorial date: 10/26/24
+Github creation: July 30, 2024
+
+1
+addisondeabreu-reese@Addisons-MacBook-Pro CEN4020-Fall-assignment2 % git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+2
+git rev-list --count HEAD
+8
+
+3
+addisondeabreu-reese@Addisons-MacBook-Pro CEN4020-Fall-assignment2 % git log -- README.md
+commit b6f09aca5294f4dea75afa84d06effec4e18e039
+Author: Addison deAbreu-Reese <addisonquinndr@gmail.com>
+Date:   Fri Nov 1 06:02:42 2024 -0400
+
+    Updated information files
+    
+    The information files have been updated to describe the current state of the repository.
+    
+    Repository owner information added to README.md
+
+commit f4975e5d56ff331762b318bfd12c5236e0299f25 (origin/master, origin/HEAD)
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Wed Sep 25 18:33:08 2019 -0400
+
+    -> Adding an empty README.md file
+
+4
+Git branches are used to isolate work so that an individual piece of a project can be modified by multiple people while protecting the source code. Also, 
+branches are very useful in allowing collaboration between people.
+
+5
+Git log shows a history of the directory while git status shows the current state of the current working directory.
+
+6
+git log --name-status -- Vehicle.h
+
+7
+git log --grep="file"
+
+8
+I) Inheritance is the property that allows for a parent-child relationship in classes, where the child class inherits the properties of the parent.
+II) Polymorphism is the characteristic of OOP that allows difference classes to be used as the same class with the same methods.
+III) Encapsulation is the ability to control access to data, such as using public methods to access private attributes.
+
+9
+The main difference between the two workflows is that in the Dictator and Lieutenants workflow, all changes go through the dictator, and the Integration 
+Manager allows for developers to have two repositories.
+
+10
+A team of 100 developers could create a massive and messy repository with a centralized workflow. A dictator and Lieutenants workflow would allows for the 
+Dictator to manage the size and structure of the repository, and the layer of lieutenants would help manage the dictators work load.
